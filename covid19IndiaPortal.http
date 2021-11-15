@@ -8,16 +8,16 @@ Content-Type: application/json
 
 ###
 get http://localhost:3000/states/
-authorization: bearer eyJhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3OTc4NX0.WZ2pnnGawOrMFNwnYIkazHGTTa7yIDNuAai3sklvEPI
+authorization: bearer *tokenID*
 
 
 ###
 get http://localhost:3000/states/2
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3MzczNX0.ydHJgK8qh85EZycSlT11UIRLYDW2m17LJwM5Cqr3Zww
+authorization: bearer *tokenID*
 
 ###
 POST http://localhost:3000/districts/
-Authorization: Bearer eyJhbGiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+Authorization: Bearer *tokenID*
 Host: localhost
 Content-Type: application/json
 Content-Length: 114
@@ -33,15 +33,15 @@ Content-Length: 114
 
 ###
 get http://localhost:3000/districts/322
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+authorization: bearer *tokenID*
 
 ###
 delete http://localhost:3000/districts/767
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+authorization: bearer *tokenID*
 
 ###
 put http://localhost:3000/districts/768
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3OTc4NX0.WZ2pnnGawOrMFNwnYIkazHGTTa7yIDNuAai3sklvEPI
+Authorization: Bearer *tokenID*
 Host: localhost
 Content-Type: application/json
 
@@ -57,4 +57,4 @@ Content-Type: application/json
 
 ###
 get http://localhost:3000/states/3/stats/
-authorization: bearer eyJhbGiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3MzczNX0.ydHJgK8qh85EZycSlT11UIRLYDW2m17LJwM5Cqr3Zww
+authorization: bearer *tokenID*
