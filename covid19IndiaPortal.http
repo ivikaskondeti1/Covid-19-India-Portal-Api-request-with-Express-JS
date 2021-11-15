@@ -1,0 +1,60 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+get http://localhost:3000/states/
+authorization: bearer eyJhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3OTc4NX0.WZ2pnnGawOrMFNwnYIkazHGTTa7yIDNuAai3sklvEPI
+
+
+###
+get http://localhost:3000/states/2
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3MzczNX0.ydHJgK8qh85EZycSlT11UIRLYDW2m17LJwM5Cqr3Zww
+
+###
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+Host: localhost
+Content-Type: application/json
+Content-Length: 114
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+get http://localhost:3000/districts/322
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+
+###
+delete http://localhost:3000/districts/767
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3NjAyMn0.yzAmFLfffbmepGuM9N0Udd866CpgnuH97F9kNeG_PEQ
+
+###
+put http://localhost:3000/districts/768
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3OTc4NX0.WZ2pnnGawOrMFNwnYIkazHGTTa7yIDNuAai3sklvEPI
+Host: localhost
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+
+###
+get http://localhost:3000/states/3/stats/
+authorization: bearer eyJhbGiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwicGFzc3dvcmQiOiJjaHJpc3R5QDEyMyIsImlhdCI6MTYzNjk3MzczNX0.ydHJgK8qh85EZycSlT11UIRLYDW2m17LJwM5Cqr3Zww
